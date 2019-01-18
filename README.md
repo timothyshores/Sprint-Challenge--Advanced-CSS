@@ -105,21 +105,21 @@ _You will know everything is working properly when you see the styles enabled fo
 
 - [✅] Main Content Styles: Use the `home-page.less` file for styling
 
-- [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+- [✅] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-- [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+- [✅] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-- [ ] Use at least 2 parameters to create your button
+- [✅] Use at least 2 parameters to create your button
 
-- [ ] Create a hover state that swaps the background color and font color of the base button styles.
+- [✅] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
 - [✅] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-- [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+- [✅][review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-- [ ] Push your changes and create a pull request if you haven't already.
+- [✅] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -129,7 +129,7 @@ After finishing your required elements, you can push your work further. These go
 
 - [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
 
-- [ ] Introduce CSS animations to your site.
+- [✅] Introduce CSS animations to your site.
 
 - [ ] Create a fixed navigation and add some opacity to the background
 

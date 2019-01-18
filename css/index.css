@@ -181,6 +181,11 @@ p {
   justify-content: space-between;
   width: 60%;
 }
+@media (max-width: 500px) {
+  .navigation nav {
+    justify-content: space-evenly;
+  }
+}
 .navigation nav a {
   color: black;
   text-decoration: none;
@@ -223,6 +228,12 @@ footer {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -231,7 +242,7 @@ footer {
 }
 .home .space-images {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
 }
 .home .space-images img {
@@ -274,6 +285,9 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column;
+    margin-top: 25px;
+    padding: 10px 15px;
+    margin: 0 auto;
   }
 }
 .home .walk .walk-text {
@@ -290,6 +304,46 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  color: #22283a;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #22283a;
+  border-radius: 10px;
+  transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.home .walk .walk-text .btn:hover {
+  color: #f6f6f6;
+  background-color: transparent;
+}
+.home .walk .walk-text .btn:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+.home .walk .walk-text .btn:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  color: #22283a;
+  background: red;
+  transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    margin: 15px 0 0;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -298,8 +352,9 @@ footer {
   .home .walk .walk-img {
     order: -1;
     width: 100%;
-    margin-bottom: 10px;
+    margin: 10px 0;
     padding-bottom: 10px;
+    margin-left: 0;
   }
 }
 .home .walk .walk-img img {
