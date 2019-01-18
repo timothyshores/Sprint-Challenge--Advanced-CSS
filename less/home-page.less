@@ -85,10 +85,6 @@
 			p {
 				margin-bottom: 26px;
 			}
-
-			.btn {
-				.btn-sign-up(@btn-bg-color, @nav-bg);
-			}
 		}
 
 		.walk-img {
@@ -107,6 +103,28 @@
 				height: auto;
 				border-radius: 10px;
 			}
+		}
+	}
+
+	.sign-up {
+		padding-top: 20px;
+		margin-top: 20px;
+		border-top: 1px solid @main-border-color;
+
+		h3 {
+			padding: 10px 0 30px;
+		}
+
+		p {
+			padding: 10px 0 30px;
+		}
+
+		.info {
+			font-style: italic;
+		}
+
+		.btn {
+			.btn-sign-up(@btn-bg-color, @nav-bg);
 		}
 	}
 } // home

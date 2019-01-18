@@ -306,47 +306,6 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
-  color: #22283a;
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 15px 20px;
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 auto;
-  position: relative;
-  border: 2px solid #22283a;
-  border-radius: 10px;
-  transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
-}
-.home .walk .walk-text .btn:hover {
-  color: #f6f6f6;
-  background-color: transparent;
-}
-.home .walk .walk-text .btn:hover:before {
-  left: 0%;
-  right: auto;
-  width: 100%;
-}
-.home .walk .walk-text .btn:before {
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  height: 100%;
-  width: 0px;
-  z-index: -1;
-  content: "";
-  color: #22283a;
-  background: #454a59;
-  transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    width: 100%;
-    text-align: center;
-  }
-}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -364,4 +323,63 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .sign-up {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #dee2e6;
+}
+.home .sign-up h3 {
+  padding: 10px 0 30px;
+}
+.home .sign-up p {
+  padding: 10px 0 30px;
+}
+.home .sign-up .info {
+  font-style: italic;
+}
+.home .sign-up .btn {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto 25px;
+  position: relative;
+  border: 2px solid #22283a;
+  border-radius: 10px;
+  transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.home .sign-up .btn a {
+  color: #22283a;
+  text-decoration: none;
+}
+.home .sign-up .btn:hover {
+  background-color: transparent;
+}
+.home .sign-up .btn:hover a {
+  color: #f6f6f6;
+}
+.home .sign-up .btn:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+.home .sign-up .btn:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  background: #454a59;
+  transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+}
+@media (max-width: 500px) {
+  .home .sign-up .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
