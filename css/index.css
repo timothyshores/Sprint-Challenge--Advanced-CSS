@@ -212,7 +212,9 @@ p {
   }
 }
 .navigation-container {
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.95);
+  position: sticky;
+  top: 0;
 }
 footer {
   color: #22283B;
@@ -336,12 +338,13 @@ footer {
   z-index: -1;
   content: "";
   color: #22283a;
-  background: red;
+  background: #454a59;
   transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    margin: 15px 0 0;
+    width: 100%;
+    text-align: center;
   }
 }
 .home .walk .walk-img {
