@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A: An adaptive websites adapt to the width of the browser at a specific points. A responsive websites respond to the size of the browser at any given point. No matter what the browser width may be, the site adjusts its layout (and perhaps functionality) in a way that is optimized to the screen.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A: Desktop first means that the initial design is based on the the maximum resolution and then the UI scales down to the smallest screen. Mobile first is designing the entire UI based on the smallest screen and then increasing the resolution of the users device. CSS media queries for desktop first design utilize the @media (max-width: ) property while media queries for mobile first design use the @media (min-width: ) property.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+A: It sets the standard font size from 16px to 10px. This is helpful for rem units because we now have a base 10 number. If you wanted a header element to be 25 px then you would set the font-size to 2.5rem. If you want a paragraph element to be 16px then you could set the font-size to 16px. This is useful for people who have visual difficulties reading the text of your website because they can change the default text size in their browser and the text size would increase across the website.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A: It's like CSS on steroids. It allows you to write nested code similiar to your html. You can create your own shortcuts known as mixins, you can create variables for colors and breakpoints and you can break out your css code over multiple files based on the components that you want to style.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+A: Favorite concept: nesting. The concept that I've had the most trouble with is mixins and specificity. I had an issue the other day where I assigned a button a mixin class that was nested 4 selectors deep. When I wrote regular CSS such as color: red it worked in the DOM but when I called my mixin function it would not work. I eventually tried to move this section of the code out of the current nesting structure and to the root of a .less file and it worked.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
