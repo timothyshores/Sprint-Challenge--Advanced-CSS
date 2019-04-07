@@ -34,45 +34,54 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A: An adaptive websites adapt to the width of the browser at a specific points. A responsive websites respond to the size of the browser at any given point. No matter what the browser width may be, the site adjusts its layout (and perhaps functionality) in a way that is optimized to the screen.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A: Desktop first means that the initial design is based on the the maximum resolution and then the UI scales down to the smallest screen. Mobile first is designing the entire UI based on the smallest screen and then increasing the resolution of the users device. CSS media queries for desktop first design utilize the @media (max-width: ) property while media queries for mobile first design use the @media (min-width: ) property.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+A: It sets the standard font size from 16px to 10px. This is helpful for rem units because we now have a base 10 number. If you wanted a header element to be 25 px then you would set the font-size to 2.5rem. If you want a paragraph element to be 16px then you could set the font-size to 16px. This is useful for people who have visual difficulties reading the text of your website because they can change the default text size in their browser and the text size would increase across the website.
+
 4. How would you describe preprocessing to someone new to CSS?
+
+A: It's like CSS on steroids. It allows you to write nested code similiar to your html. You can create your own shortcuts known as mixins, you can create variables for colors and breakpoints and you can break out your css code over multiple files based on the components that you want to style.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+A: Favorite concept: nesting. The concept that I've had the most trouble with is mixins and specificity. I had an issue the other day where I assigned a button a mixin class that was nested 4 selectors deep. When I wrote regular CSS such as color: red it worked in the DOM but when I called my mixin function it would not work. I eventually tried to move this section of the code out of the current nesting structure and to the root of a .less file and it worked.
+
+You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
 ## Project Set Up
 
-Because you are using a preprocessor, there are two parts to setting up your project.  Be sure to run through the git set up first and then set up the preprocessor.
+Because you are using a preprocessor, there are two parts to setting up your project. Be sure to run through the git set up first and then set up the preprocessor.
 
 ### Git Set up
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+- [✅] Create a forked copy of this project.
+- [✅] Add your project manager as collaborator on Github.
+- [✅] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [✅] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [✅] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [✅] Push commits: git push origin `<firstName-lastName>`.
+
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [✅] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+- [✅] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+- [✅] Open your terminal and navigate to your preprocessing project by using the `cd` command
+- [✅] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+- [✅] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+- [✅] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
 
@@ -80,7 +89,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+- [✅] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -92,35 +101,35 @@ Your finished project must include all of the following requirements:
 7.home-page.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+- [✅] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+- [✅] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+- [✅][review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+- [✅] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+- [✅] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+- [✅] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+- [✅] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+- [✅] Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+- [✅] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+- [✅] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+- [✅][review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+- [✅] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -128,10 +137,10 @@ In your solution, it is essential that you follow best practices and produce cle
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
+- [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
 
-* [ ] Introduce CSS animations to your site.
+- [✅] Introduce CSS animations to your site.
 
-* [ ] Create a fixed navigation and add some opacity to the background
+- [✅] Create a fixed navigation and add some opacity to the background
 
-* [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+- [✅] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
